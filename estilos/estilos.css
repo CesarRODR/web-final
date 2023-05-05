@@ -53,7 +53,7 @@ header img:hover {
   grid-template-rows: auto auto;
 }
 .layout * {
-  border: solid 2px red;
+  border: solid 2px rgb(0, 255, 47);
   background: skyblue;
   width: 50%;
 }
