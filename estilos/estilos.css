@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.386), rgba(44, 44, 44, 0.589));
+}
+
+h2 {
+  font-size: 90px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 6.5vh;
+  text-align: center;
+}
+header img {
+  width: 200px;
+  transition: 2500ms;
+}
+header img:hover {
+  transform: scale(1.2, 1.3);
+}
+
+.navbar .navbar-nav {
+  background-color: rgb(69, 38, 38);
+  width: 100%;
+  border: solid 2px rgb(105, 93, 93);
+  justify-content: end;
+  justify-content: space-between;
+}
+.navbar a {
+  color: white;
+}
+
+.buscar {
+  position: unset;
+}
+.buscar .btn {
+  background-color: rgba(198, 198, 209, 0.214);
+}
+
+.layout {
+  border: solid 2px blue;
+  height: 700px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+}
+.layout * {
+  border: solid 2px red;
+  background: skyblue;
+  width: 50%;
+}
+.layout .galeria-1 {
+  width: 80%;
+  height: 300px;
+  grid-column: 1/4;
+}
+.layout .galeria-2 {
+  width: 80%;
+  height: 300px;
+  grid-column: 1/4;
+}
+.layout .sidebar {
+  width: 80%;
+}
+
+section {
+  display: flex;
+  width: 80vw;
+  max-width: 1000px;
+  min-width: 320px;
+  height: 530px;
+  margin: 150px auto;
+  background: linear-gradient(45deg, rgba(11, 223, 61, 0.5), rgba(3, 81, 101, 0.659), rgba(23, 106, 65, 0.484), rgba(62, 62, 234, 0.516));
+  background-size: 300% 300%;
+  gap: 3px;
+  animation: efecto 10s ease infinite;
+}
+section img {
+  width: 50px;
+  flex-grow: 1;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  transition: 0.5s ease-in;
+  border-radius: 40px;
+}
+section img:hover {
+  cursor: crosshair;
+  width: 300px;
+}
+
+@keyframes efecto {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.videos {
+  gap: 10px;
+  font-size: 10px;
+}
+.videos div {
+  background: cadetblue;
+  border: solid 2px rgb(0, 255, 123);
+  width: 50%;
+  text-align: center;
+}
+.videos h3 {
+  font-size: 2rem;
+}
+.videos p {
+  font-size: 1rem;
+}
+
+.card-img-top {
+  height: 400px;
+  background-image: linear-gradient(rgba(36, 15, 18, 0.705), rgba(0, 136, 255, 0.284));
+}
+
+.card {
+  background-image: linear-gradient(rgba(0, 0, 139, 0.284), rgba(169, 169, 169, 0.19));
+}
+
+.footer .contacto {
+  display: flex;
+  flex-direction: row;
+}
+.footer ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  font-size: 2.5vh;
+}
+.footer .sociales {
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  border: solid 2px blue;
+}
+.footer a {
+  width: 100px;
+  height: 50px;
+}
+
+/* NOSOTROS */
+.info {
+  width: 80%;
+  height: 100%;
+  background: #a5bcbe;
+}
+.info img {
+  width: 500px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1500ms;
+  border-radius: 50px;
+  box-shadow: 0 0 20px black;
+}
+.info img:hover {
+  transform: scale(1.1, 1.1);
+}
+.info h2 {
+  text-align: center;
+  font-size: 50px;
+}
+
+/* formulario registro */
+.registro {
+  width: 400px;
+  background: rgba(11, 60, 112, 0.1294117647);
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  box-shadow: 10PX 15px 20px rgba(11, 60, 112, 0.3882352941);
+}
+
+.registro h4 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  width: 95%;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  border: solid 1px rgb(0, 110, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.registro p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.registro a {
+  color: white;
+  text-decoration: none;
+}
+
+.registro a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.boton {
+  width: 100%;
+  background: rgba(14, 62, 107, 0.829);
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 15px 0;
+  font-size: 20px;
+  box-shadow: 0 0 0 0 rgba(15, 90, 137, 0.5);
+  animation: full 1.5s infinite;
+}
+
+@keyframes full {
+  100% {
+    transform: scale(0.99);
+    box-shadow: 0 0 0 0 black;
+  }
+}
+@media screen and (max-width: 576px) {
+  .videos div {
+    display: flex;
+    flex-direction: column;
+  }
+  .videos h3 {
+    font-size: 11px;
+  }
+  .videos p {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=estilos.css.map */
